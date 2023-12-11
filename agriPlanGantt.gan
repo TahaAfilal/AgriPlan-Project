@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="AgriPlan" company="UCA EUPI" webLink="http://" view-date="2023-11-01" view-index="0" gantt-divider-location="300" resource-divider-location="415" version="2.8.10" locale="fr_FR">
+    <description/>
+    <view zooming-state="default:8" id="gantt-chart">
+        <field id="tpd3" name="Nom" width="158" order="0"/>
+        <field id="tpd4" name="Date de début" width="62" order="1"/>
+        <field id="tpd5" name="Date de fin" width="61" order="2"/>
+        <option id="color.recent"><![CDATA[#cccc00 #ff9900 #ff0066 #ffff33 #33cc00 #33ffff #33ff00 #0033cc]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Nom" width="268" order="0"/>
+        <field id="1" name="Rôle par défaut" width="143" order="1"/>
+    </view>
+    <!-- -->
+    <calendars>
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="false"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="221" name="Lancement de projet" color="#000000" meeting="false" start="2023-11-20" duration="19" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true">
+            <task id="0" name="Création d'équipe" color="#8cb6ce" meeting="true" start="2023-11-20" duration="0" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="7" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="7" name="état d'art" color="#33cc00" meeting="false" start="2023-11-20" duration="7" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="3" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="3" name="Brain Storming" color="#33cc00" meeting="false" start="2023-11-29" duration="1" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="9" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="9" name="Betes à cornes" color="#33cc00" meeting="false" start="2023-11-30" duration="3" complete="0" thirdDate="2023-11-07" thirdDate-constraint="0" expand="true">
+                <depend id="25" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="25" name="Présentation (pitch)" color="#8cb6ce" meeting="true" start="2023-12-05" duration="0" complete="0" thirdDate="2023-11-14" thirdDate-constraint="0" expand="true">
+                <depend id="12" type="2" difference="0" hardness="Strong"/>
+                <depend id="16" type="2" difference="0" hardness="Strong"/>
+                <depend id="20" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="12" name="Benchmarking" color="#33cc00" meeting="false" start="2023-12-05" duration="7" complete="0" thirdDate="2023-11-07" thirdDate-constraint="0" expand="true"/>
+            <task id="16" name="Analyse Swot" color="#33cc00" meeting="false" start="2023-12-05" duration="7" complete="0" thirdDate="2023-11-08" thirdDate-constraint="0" expand="true"/>
+            <task id="20" name="Analyse fonctionnelle" color="#33cc00" meeting="false" start="2023-12-05" duration="7" complete="0" thirdDate="2023-11-09" thirdDate-constraint="0" expand="true">
+                <depend id="53" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="53" name="Charte de projet" color="#33cc00" meeting="false" start="2023-12-14" duration="1" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true">
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+                <depend id="68" type="2" difference="0" hardness="Strong"/>
+                <depend id="84" type="2" difference="0" hardness="Strong"/>
+                <depend id="96" type="2" difference="0" hardness="Strong"/>
+                <depend id="146" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="55" name="CAO GUI" color="#cccc00" meeting="false" start="2023-12-15" duration="66" complete="0" thirdDate="2023-11-15" thirdDate-constraint="0" expand="true">
+            <task id="68" name="Définir les besoins et les objectifs de l'application et le public cibler" color="#ff9900" meeting="false" start="2023-12-15" duration="7" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true">
+                <depend id="69" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="69" name="Esquisser le design" color="#ff9900" meeting="false" start="2023-12-26" duration="3" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true">
+                <depend id="70" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="70" name="Création du design UX" color="#ff9900" meeting="false" start="2023-12-29" duration="14" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true">
+                <depend id="72" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="72" name="Création de prototype" color="#ff9900" meeting="false" start="2024-01-18" duration="14" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true">
+                <depend id="73" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="73" name="test et optimisation des performances" color="#ff9900" meeting="false" start="2024-02-07" duration="28" complete="0" thirdDate="2023-11-20" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="140" name="CAO Mecanique" color="#0033cc" meeting="false" start="2023-12-15" duration="135" complete="0" thirdDate="2023-12-15" thirdDate-constraint="0" expand="true">
+            <task id="84" name="Croquis" color="#ff9900" meeting="false" start="2023-12-15" duration="7" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="86" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="86" name="Dessin de definitio de chaque piece" color="#ff9900" meeting="false" start="2023-12-26" duration="30" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="87" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="87" name="Dessin d'ensemble" color="#ff9900" meeting="false" start="2024-02-06" duration="15" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="88" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="88" name="Choix des materiaux" color="#ff9900" meeting="false" start="2024-02-27" duration="15" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="89" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="89" name="Etude de contraintes et RDM" color="#ff9900" meeting="false" start="2024-03-19" duration="20" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="90" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="90" name="Types d'assemblage" color="#ff9900" meeting="false" start="2024-04-16" duration="20" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="91" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="91" name="Eco-conception" color="#ff9900" meeting="false" start="2024-05-14" duration="10" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="92" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="92" name="Etude sur les types de fabrication mecanique" color="#ff9900" meeting="false" start="2024-05-28" duration="3" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="95" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="95" name="Phase de fabrication" color="#ff9900" meeting="false" start="2024-05-31" duration="15" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="141" name="CAO électronique" color="#33ffff" meeting="false" start="2023-12-15" duration="69" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+            <task id="96" name="Etude de fonctionnement" color="#ff9900" meeting="false" start="2023-12-15" duration="8" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="97" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="97" name="Definition de shema electronique" color="#ff9900" meeting="false" start="2023-12-27" duration="20" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="98" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="98" name="Choix des composants" color="#ff9900" meeting="false" start="2024-01-24" duration="14" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="99" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="99" name="Realisation de PCB" color="#ff9900" meeting="false" start="2024-02-13" duration="15" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="101" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="101" name="Impression" color="#ff9900" meeting="false" start="2024-03-05" duration="5" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="103" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="103" name="Cablage" color="#ff9900" meeting="false" start="2024-03-12" duration="6" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true">
+                <depend id="105" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="105" name="Test electrique" color="#ff9900" meeting="false" start="2024-03-20" duration="1" complete="0" thirdDate="2023-12-04" thirdDate-constraint="0" expand="true"/>
+        </task>
+        <task id="142" name="CAO Software" color="#33ff00" meeting="false" start="2023-12-15" duration="105" complete="0" thirdDate="2023-12-15" thirdDate-constraint="0" expand="true">
+            <task id="146" name="Collection des données" color="#ff9900" meeting="false" start="2023-12-15" duration="25" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+                <depend id="147" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="147" name="préparation et organisation des données" color="#ff9900" meeting="false" start="2024-01-19" duration="10" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+                <depend id="148" type="2" difference="0" hardness="Strong"/>
+                <depend id="150" type="2" difference="0" hardness="Strong"/>
+                <depend id="151" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="148" name="choix structure modele IA" color="#ff9900" meeting="false" start="2024-02-02" duration="30" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true"/>
+            <task id="150" name="Entrainement IA" color="#ff9900" meeting="false" start="2024-02-02" duration="30" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true"/>
+            <task id="151" name="Validation de fonctionnement IA" color="#ff9900" meeting="false" start="2024-02-02" duration="30" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+                <depend id="153" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="153" name="Test de fonctionnement IA" color="#ff9900" meeting="false" start="2024-03-15" duration="20" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true">
+                <depend id="155" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="155" name="Intégration de IA" color="#ff9900" meeting="false" start="2024-04-12" duration="20" complete="0" thirdDate="2023-10-23" thirdDate-constraint="0" expand="true"/>
+        </task>
+    </tasks>
+    <resources>
+        <resource id="0" name="Taha Afilal" function="1" contacts="Taha.AFILAL@etu.uca.fr" phone="0744892923"/>
+        <resource id="1" name="Hamza ELMAJDAOUI" function="4" contacts="Hamza.ELMAJDAOUI@etu.uca.fr" phone="0620948473"/>
+        <resource id="2" name="Moussa Bentaleb" function="3" contacts="Moussa.BENTALEB@etu.uca.fr" phone=""/>
+        <resource id="3" name="Ayoub AZAOUI" function="3" contacts="Ayoub.AZAOUI@etu.uca.fr" phone=""/>
+        <resource id="4" name="EL mehdi ERRAJI" function="2" contacts="El_mehdi.ERRAJI@etu.uca.fr" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="142" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="148" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="153" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="221" resource-id="0" function="1" responsible="true" load="100.0"/>
+        <allocation task-id="55" resource-id="1" function="4" responsible="true" load="100.0"/>
+        <allocation task-id="140" resource-id="2" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="141" resource-id="3" function="3" responsible="true" load="100.0"/>
+        <allocation task-id="142" resource-id="4" function="2" responsible="false" load="100.0"/>
+        <allocation task-id="146" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="147" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="150" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="151" resource-id="4" function="2" responsible="true" load="100.0"/>
+        <allocation task-id="155" resource-id="4" function="2" responsible="true" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles>
+        <role id="1" name="Chef de Projet"/>
+        <role id="2" name="Développeur IA "/>
+        <role id="3" name="Concepteur Hardware"/>
+        <role id="4" name="Concepteur Interface Graphique"/>
+        <role id="5" name="Responsable Hardware "/>
+        <role id="6" name="Responsable Software"/>
+    </roles>
+</project>
